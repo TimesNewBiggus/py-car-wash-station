@@ -33,8 +33,8 @@ class CarWashStation:
     def serve_cars(self, cars: list[Car]) -> float:
         total_price = 0
         for car in cars:
-            total_price += self.calculate_washing_price(self, car)
-            self.wash_single_car(self, car)
+            total_price += self.calculate_washing_price(car)
+            self.wash_single_car(car)
 
         return round(total_price, 1)
 
