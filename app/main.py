@@ -24,6 +24,8 @@ class CarWashStation:
                                   * (self.clean_power - car.clean_mark)
                                   * (self.average_rating
                                      / self.distance_from_city_center), 1)
+        else:
+            washing_price = 0
         return washing_price
 
     def wash_single_car(self, car : Car) -> None :
